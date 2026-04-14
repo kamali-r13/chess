@@ -3,6 +3,7 @@ let game = new Chess();
 let board = Chessboard('board', {
     draggable: true,
     position: 'start',
+    pieceTheme: "https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png",
 
     onDragStart: function (source, piece) {
         if (game.game_over()) return false;
